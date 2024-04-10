@@ -10,10 +10,12 @@ public class Paciente {
 	
 	//Construtor
 	//O construtor da classe recebe essas informações como argumentos e os colocam nos respectivos atributos da classe
+
 	public Paciente(double peso, double altura) {
 		this.peso = peso;
 		this.altura = altura;
 	}
+
 	public double calculaIMC() {
 		 
 	return peso / (altura * altura);
