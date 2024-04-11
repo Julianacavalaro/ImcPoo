@@ -31,7 +31,7 @@ public class Paciente {
 		} else if (IMC <= 24.99){
 			return "Peso normal";
 		} else if (IMC <= 29.99){
-			return "Sobrepeso ";
+			return "Sobrepeso";
 		} else if (IMC <= 34.99){
 			return "Obesidade grau I";
 		} else if (IMC <= 39.99){
