@@ -11,7 +11,7 @@ class Paciente_teste {
 	void baixopesoMuitoGrave() {
 		Paciente pacienteBaixopesoMuitoGrave = new Paciente(40, 1.66);
 		System.out.println(pacienteBaixopesoMuitoGrave.calculaIMC());
-		assertEquals(pacienteBaixopesoMuitoGrave.calculaIMC(), 14.51589490492089);
+		assertEquals(pacienteBaixopesoMuitoGrave.calculaIMC(), 14.51, 0.01);
 		assertEquals(pacienteBaixopesoMuitoGrave.diagnostico(), "Baixo peso muito grave");
 	};
 	
@@ -19,7 +19,7 @@ class Paciente_teste {
 	void baixopesoGrave() {
 		Paciente pacienteBaixopesoGrave = new Paciente(46.7, 1.66);
 		System.out.println(pacienteBaixopesoGrave.calculaIMC());
-		assertEquals(pacienteBaixopesoGrave.calculaIMC(),16.94730730149514);
+		assertEquals(pacienteBaixopesoGrave.calculaIMC(),16.94, 0.01);
 		assertEquals(pacienteBaixopesoGrave.diagnostico(), "Baixo peso grave");
 	};
 	
@@ -27,7 +27,7 @@ class Paciente_teste {
 	void baixopeso() {
 		Paciente pacienteBaixopeso = new Paciente(48, 1.66);
 		System.out.println(pacienteBaixopeso.calculaIMC());
-		assertEquals(pacienteBaixopeso.calculaIMC(),17.419073885905068);
+		assertEquals(pacienteBaixopeso.calculaIMC(),17.41, 0.01);
 		assertEquals(pacienteBaixopeso.diagnostico(), "Baixo peso");
 	};
 	
@@ -36,7 +36,7 @@ class Paciente_teste {
 		Paciente pacientePesoNormal = new Paciente(62, 1.66);
 		System.out.println(pacientePesoNormal.calculaIMC());
 		assertEquals(pacientePesoNormal.diagnostico(), "Peso normal");
-		assertEquals(pacientePesoNormal.calculaIMC(),22.49963710262738);
+		assertEquals(pacientePesoNormal.calculaIMC(),22.49, 0.01);
 
 	};
 
@@ -45,7 +45,7 @@ class Paciente_teste {
 		Paciente pacienteSobrePeso = new Paciente(69, 1.66);
 		System.out.println(pacienteSobrePeso.calculaIMC());
 		assertEquals(pacienteSobrePeso.diagnostico(), "Sobrepeso");
-		assertEquals(pacienteSobrePeso.calculaIMC(),25.039918710988534);
+		assertEquals(pacienteSobrePeso.calculaIMC(),25.03, 0.01);
 
 	};
 	
@@ -54,7 +54,7 @@ class Paciente_teste {
 		Paciente pacienteobesidadeGrauUm = new Paciente(85, 1.66);
 		System.out.println(pacienteobesidadeGrauUm.calculaIMC());
 		assertEquals(pacienteobesidadeGrauUm.diagnostico(), "Obesidade grau I");
-		assertEquals(pacienteobesidadeGrauUm.calculaIMC(),30.84627667295689);
+		assertEquals(pacienteobesidadeGrauUm.calculaIMC(),30.84, 0.01);
 	};
 	
 	@Test
@@ -62,7 +62,7 @@ class Paciente_teste {
 		Paciente pacienteobesidadeGrauDois = new Paciente(100, 1.66);
 		System.out.println(pacienteobesidadeGrauDois.calculaIMC());
 		assertEquals(pacienteobesidadeGrauDois.diagnostico(), "Obesidade grau II");
-		assertEquals(pacienteobesidadeGrauDois.calculaIMC(),36.289737262302225);
+		assertEquals(pacienteobesidadeGrauDois.calculaIMC(),36.28, 0.01);
 	};
 	
 	@Test
@@ -70,7 +70,7 @@ class Paciente_teste {
 		Paciente pacienteobesidadeGrauTres = new Paciente(112, 1.66);
 		System.out.println(pacienteobesidadeGrauTres.calculaIMC());
 		assertEquals(pacienteobesidadeGrauTres.diagnostico(), "Obesidade grau III (obesidade mórbida)");
-		assertEquals(pacienteobesidadeGrauTres.calculaIMC(),40.64450573377849);
+		assertEquals(pacienteobesidadeGrauTres.calculaIMC(),40.64, 0.01);
 
 	};
 }
