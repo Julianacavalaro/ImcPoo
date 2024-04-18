@@ -17,6 +17,10 @@ public class Principal {
 		
 		System.out.println("Seu IMC é " + p3.calculaIMC());
 		System.out.println(p3.diagnostico());
+		   Paciente paciente = new Paciente(45, 1.60); 
+		   System.out.println("-------------------");
+		   System.out.println(paciente.diagnostico());
+		   System.out.println(paciente.calculaIMC());
 	}
 
 }

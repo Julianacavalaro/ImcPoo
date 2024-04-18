@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.fail;
 
 import org.junit.jupiter.api.Test;
 
-class Paciente_teste {
+class PacienteTeste {
 
 	@Test
 	void baixopesoMuitoGrave() {
@@ -28,7 +28,7 @@ class Paciente_teste {
 		Paciente pacienteBaixopeso = new Paciente(48, 1.66);
 		System.out.println(pacienteBaixopeso.calculaIMC());
 		assertEquals(pacienteBaixopeso.calculaIMC(),17.41, 0.01);
-		assertEquals(pacienteBaixopeso.diagnostico(), "Baixo peso");
+		assertEquals(pacienteBaixopeso.diagnostico(), Paciente.baixoPesoMsg);
 	};
 	
 	@Test
@@ -71,6 +71,5 @@ class Paciente_teste {
 		System.out.println(pacienteobesidadeGrauTres.calculaIMC());
 		assertEquals(pacienteobesidadeGrauTres.diagnostico(), "Obesidade grau III (obesidade mórbida)");
 		assertEquals(pacienteobesidadeGrauTres.calculaIMC(),40.64, 0.01);
-
 	};
 }

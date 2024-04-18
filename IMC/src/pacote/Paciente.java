@@ -20,6 +20,8 @@ public class Paciente {
 		 
 	return peso / (altura * altura);
 	}
+	
+	static final String baixoPesoMsg = "Baixo peso";
 	public String diagnostico () {
 		double IMC = calculaIMC();
 		if (IMC <= 16) {
@@ -27,7 +29,7 @@ public class Paciente {
 		} else if (IMC <= 16.99) {
 			return "Baixo peso grave";
 		} else if (IMC <= 18.49){
-			return "Baixo peso";
+			return baixoPesoMsg;
 		} else if (IMC <= 24.99){
 			return "Peso normal";
 		} else if (IMC <= 29.99){
